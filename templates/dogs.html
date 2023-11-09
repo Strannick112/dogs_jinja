@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block misha %}
+<div>
+    <table>
+        <tbody>
+        {% for dog in data %}
+            <td>
+
+                <div>
+                    <a href="dog_info?id={{ dog.id }}"> <img src="{{ dog.photo }}" width="400px" height="300px"> </a>
+                    <p>Пол: {{ dog.gender }}</p>
+                    <p>Порода: {{ dog.type }}</p>
+                </div>
+            </td>
+    {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+{% endblock %}

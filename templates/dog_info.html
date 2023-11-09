@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block misha %}
+
+<img src="{{ dog.photo }}" width="400px" height="300px">
+<p>Пол: {{ dog.gender }}</p>
+<p>Порода: {{ dog.type }}</p>
+<p>Описание: {{ dog.description }}</p>
+
+{% endblock %}
